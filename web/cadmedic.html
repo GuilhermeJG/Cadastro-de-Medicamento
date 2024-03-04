@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro Medicamento </title>
+        <meta charset="ISO-8859-1">
+        <!-- ISO-8859-1 iso pra arrumar questï¿½o de acento  -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            h1,p{
+                color: white;
+                font-family: arial;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <form method="post" action="salvar_medic.jsp">
+            <p>
+                <label for="id">ID:</label>
+                <input type="number" name="id" id="id" required>
+            </p>
+            <p>
+                <label for="nome">Nome do Medicamento:</label>
+                <input type="text" name="nome" id="nome" size="35" maxlength="100" required >
+            </p>  
+            <p>
+                <label for="compos">Composição:</label>
+                <input type="text" name="composicao" id="compos" size="35" maxlength="100" required >
+            </p> 
+            <p>
+                <label for="quant">Quantidade</label>
+                <input type="number" name="quantidade" id="quant" required >
+            </p>              
+            <p>
+                <input type="submit" value="Salvar medicamento">   
+            </p>
+
+        </form>    
+
+
+    </body>
+</html>
